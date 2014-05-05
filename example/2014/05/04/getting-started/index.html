@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Getting Started with MicroView</title>
+    <meta name="description" content="Step-by-step instructions for setting up the Arduino software and connecting it to your MicroView.">
+	
+	<meta name="author" content="Geek Ammo">
+	
+	<link rel="stylesheet" href="/assets/themes/Snail/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/main.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/pages/journal.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/team.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/static.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/errors.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/google-code-prettify/prettify.css">
+	<link rel="shortcut icon" href="/assets/themes/Snail/img/favicon.ico">
+<!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> --!>
+	<script src="/assets/themes/Snail/google-code-prettify/prettify.js"></script>
+    <script src="/assets/themes/Snail/js//search.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	  $(function(){
+		$("pre code").addClass("prettyprint linenums");
+		prettyPrint();
+	  });
+	</script>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+</head>
+<body>
+	<noscript>
+		&amp;lt;div id="no-js"&amp;gt;Please enable JavaScript in your browser to experience / fully&amp;lt;/div&amp;gt;
+	</noscript>
+    <div id="page-container">
+		<div>
+			<nav>
+	<div id="nav-l">
+	</div>
+	<div id="nav-c">
+		<ul id="nav-list" style="width: 700px;">
+			<li id="home"><a href="/">Home</a></li>
+			
+			
+			
+				
+                
+				  
+				
+                
+			 
+				
+                
+				  
+					
+					<li id = "Categories"><a href="/categories.html">Categories</a></li>
+					
+				  
+				
+                
+			 
+				
+                
+				  
+				
+                
+			 
+				
+                
+				  
+					
+					<li id = "Tags"><a href="/tags.html">Tags</a></li>
+					
+				  
+				
+                
+			 
+				
+                
+				  
+					
+					<li id = "About Us"><a href="/about.html">About Us</a></li>
+					
+				  
+				
+                
+			 
+				
+                
+				  
+					
+					<li id = "Archive"><a href="/archive.html">Archive</a></li>
+					
+				  
+				
+                
+			 
+				
+                
+                
+			 
+				
+			 
+				
+                
+				  
+				
+                
+			 
+				
+                
+				  
+				
+                
+			 
+			
+			
+		</ul>
+        
+		<form action="/search.html" id="nav-search" method="GET">
+			<div id="search-right-pix">
+				<div id="search-left-pix">
+					<div id="search-center-pix">
+						<div id="search-icon-pix"></div>
+						<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</form>
+
+    </div>		
+
+	<div id="nav-r">
+	</div>
+</nav>
+
+<div>
+
+<section id="search-results" style="display: none;">
+    <h1>Search results</h1>
+    <div class="entries">
+    </div>
+</section>
+
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <big><a href="{{url}}">{{title}}</a></big>
+    </article>
+  {{/entries}}
+</script>
+
+</div>
+
+			<div id="page-content">
+				
+<div id="page-content">
+	<div class="cont932">
+	<div id="journal-articles-block">
+		<div class="journal-article">
+			<div class="journal-post-info">
+				<div class="journal-cat-box">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#example-ref" title="example">
+	example
+
+</a>
+</div>
+				
+				</div>
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title">Getting Started with MicroView<span class="author"></span>
+				</h1>
+				<span class="the-article">
+				<h3 id="download-arduino-software-ide">Download Arduino Software (IDE)</h3>
+
+<p>In order to get your MicroView up and running you’ll need the latest version of the Arduino software available from the Arduino Website. The Arduino software (also known as the Arduino IDE), lets you program you MicroView (and other Arduinos). </p>
+
+<p>To get the Arduino software visit: <a href="arduino.cc/en/main/software">arduino.cc/en/main/software</a>.</p>
+
+<h3 id="install-drivers">Install Drivers</h3>
+
+<p>Use the MicroView USB programmer or FTDI cable to connect your MicroView to one of your computer’s USB ports. The MicroView USB programmer uses a special <em>FTDI chip</em> to convert the signals from your computer’s USB port into serial signals compatible with your MicroView. This <em>FTDI chip</em> requires special drivers to be installed on your computer.</p>
+
+<h4 id="installing-ftdi-drivers-on-windows">Installing FTDI drivers on Windows</h4>
+
+<h4 id="installing-ftdi-drivers-on-mac">Installing FTDI drivers on Mac</h4>
+
+<ol>
+  <li>
+    <p>Head over to the FTDI site. Look on the left side for ‘Drivers,’ and then choose ‘VCP Drivers’.</p>
+  </li>
+  <li>
+    <p>Now we need to determine if you need the x86 or x64 bit version of the drivers. Click on the apple icon in the top left of the screen, and choose ‘About this Mac’.</p>
+  </li>
+  <li>
+    <p>Check under ‘Processor’ to see which version you have. Follow the chart below to determine which drivers to download.</p>
+  </li>
+  <li>
+    <p>Download the files from the site by clicking on the link. Locate the .dmg file that was downloaded to your computer, and double click on it. If you are not sure which version of OS X you have, use the same process as before when finding the processor type. Click on the apple and choose ‘About This Mac’. You will then see Version 10.X.Y–use the 10.X to determine your system version.</p>
+  </li>
+  <li>
+    <p>Continue through the installation, and wait for it to finish. Then click ‘Close.’</p>
+  </li>
+</ol>
+
+<h4 id="installing-ftdi-drivers-on-linux">Installing FTDI drivers on Linux</h4>
+
+<h3 id="identify-your-hardware">Identify Your Hardware</h3>
+
+<p>Your MicroView and the Arduino UNO are interchangeable but you won’t find the MicroView listed in the Arduino Software. Select “Arduino UNO” instead.</p>
+
+<h3 id="download-and-install-the-microview-library">Download and install the “MicroView Library”</h3>
+
+				</span>
+				<div class="journal-date">Published 04 May 2014</div>
+				<div class="journal-tags">
+				
+				
+	 
+		<a class="tag-cont" href="/tags.html#microview-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">microview</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#setup-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">setup</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#getting-started-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">getting-started</div>
+			<div class="tag-r"></div>
+		</a>
+	
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+</div>
+	<div class="clearboth"></div>
+	
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'geekammo'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+	<div class="clearboth"></div>
+</div>
+
+			</div>
+			<div class="clearboth pagebottom"></div>
+		</div>
+	</div>
+	<script src="/assets/themes/Snail/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      index:    '/search.json',
+      results:  '#search-results',
+      entries:  '.entries',
+      template: '#search-results-template'
+    });
+  });
+</script>
+
+<footer>
+	<div class="footer-940">
+		<div class="footer-general-info">
+			© 2014 Geek Ammo.<br><br>
+			Content licensed under:<br>
+			<a class="cc" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons</a><br>
+		</div>
+		<div class="footer-col-cont">
+			<div class="footer-nav-col">
+				<h4><a>Categories</a></h4>
+				<ul>
+					
+					
+
+
+  
+     
+    	<li><a href="/categories.html#sample-ref">
+    		sample <span>1</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#lessons-ref">
+    		lessons <span>1</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#testing-ref">
+    		testing <span>2</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#example-ref">
+    		example <span>4</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#custom-ref">
+    		custom <span>1</span>
+    	</a></li>
+    
+  
+
+
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Pages</a></h4>
+				<ul>
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about.html">About Us</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/search.html">Search</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Feed</a></h4>
+				<ul>
+					<li><a href="/atom.xml">Atom Feed</a></li>
+					<li><a href="/rss.xml">RSS Feed</a></li>
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Links</a></h4>
+				<ul>
+				 
+					<li><a href = "http://microview.io">MicroView</a></li>
+				 
+					<li><a href = "http://www.sparkfun.com">SparkFun</a></li>
+				
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a href = "/about.html">About Us</a></h4>
+				<ul>
+				 
+					<li><a href = "mailto:help@geekammo.com">e-mail</a></li>
+				 
+					<li><a href = "https://github.com/geekammo">Github</a></li>
+				
+				</ul>
+			</div>
+			<div class="clearboth"></div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+	<div class="clearboth"></div>
+</footer>
+
+	
+</body>
+</html>
+
