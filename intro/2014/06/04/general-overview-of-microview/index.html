@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>Introduction</title>
-    <meta name="description" content="What MicroView is and why you'd want to use it.">
+	<title>General Overview of MicroView</title>
+    <meta name="description" content="General Overview of MicroView">
 	
 	<meta name="author" content="Geek Ammo">
 	
@@ -51,6 +51,36 @@
 			
 				
                 
+                
+			 
+				
+                
+				  
+					
+					<li id = "Tags"><a href="/tags.html">Tags</a></li>
+					
+				  
+				
+                
+			 
+				
+                
+				  
+				
+                
+			 
+				
+                
+				  
+				
+                
+			 
+				
+                
+				  
+					
+					<li id = "Archive"><a href="/archive.html">Archive</a></li>
+					
 				  
 				
                 
@@ -60,22 +90,6 @@
 				  
 					
 					<li id = "Categories"><a href="/categories.html">Categories</a></li>
-					
-				  
-				
-                
-			 
-				
-                
-				  
-				
-                
-			 
-				
-                
-				  
-					
-					<li id = "Tags"><a href="/tags.html">Tags</a></li>
 					
 				  
 				
@@ -94,22 +108,6 @@
 				
                 
 				  
-					
-					<li id = "Archive"><a href="/archive.html">Archive</a></li>
-					
-				  
-				
-                
-			 
-				
-                
-                
-			 
-				
-			 
-				
-                
-				  
 				
                 
 			 
@@ -118,6 +116,8 @@
 				  
 				
                 
+			 
+				
 			 
 			
 			
@@ -174,8 +174,8 @@
 				
 				<div class="journal-cat-box">
 
-<a href="/categories.html#example-ref" title="example">
-	example
+<a href="/categories.html#intro-ref" title="intro">
+	intro
 
 </a>
 </div>
@@ -183,42 +183,82 @@
 				</div>
 			</div>
 			<div class="journal-body">
-				<h1 class="journal-title">Introduction<span class="author"></span>
+				<h1 class="journal-title">General Overview of MicroView<span class="author">by JP Liew</span>
 				</h1>
 				<span class="the-article">
-				<h3 id="what-is-microview">What is MicroView?</h3>
+				<p><img src="/images/MicroView_Hero.jpg" alt="MicroView Image" /></p>
 
-<p>The MicroView is a tiny chip-sized <a href="http://www.arduino.cc">Arduino</a> with a built in OLED display. An Arduino is a tool for making tiny computers (MicroControllers) that can interact with the physical world. The MicroView is controlled with the Arduino programming language which can be programmed using the free Arduino IDE.</p>
+<p>The MicroView is the first chip-sized Arduino compatible that lets you see what your Arduino is thinking using a built-in OLED display. In the heart of MicroView there is an ATMEL’s ATmega328P, 5V &amp; 3.3V LDO and a 64x48 pixel OLED display, together with other passive components that allow the MicroView to operate without any external components other than a power supply.</p>
 
-<p>Like most Arduinos, the MicroView makes it easy to interact with a variety of sensors and control actuators (like motors and relays). Unlike most Arduinos, the MicroView has a built in OLED display that makes it easy to see what’s going on inside your Arduino without having to connect it to a computer.</p>
-
-<h3 id="why-microview">Why MicroView?</h3>
-
-<p>Being MicroView shares the hallmark traits of the Arduino, namely being inexpensive, cross platform and opensource.</p>
-
-<p>The MicroView distinguishes itself from other Arduinos by being the easist to use Arduino ever. Utilising it’s beautiful OLED display; the MicroView is the first Arduino to ship with built-in tutorials that teach you the basics of Arduino and electronics.</p>
-
-<p>In addition to the built-in tutorials, we’ve also built a cross platform course that runs on iPad, Microsoft Surface and modern Web Browsers on Windows, Mac and Linux. </p>
-
-<p>The course takes you step by step through building a 11 different circuits including:</p>
-
+<h1 id="hardware-specifications">Hardware Specifications</h1>
 <ul>
-  <li>Blinking LEDs and creating different colors on an RGB LED.</li>
-  <li>Getting readings from a potentiometer (a fancy name for a knob). </li>
-  <li>Taking the input from a push button.</li>
-  <li>Sensing Temperature and Light</li>
-  <li>Controlling actuators relays, motors &amp; servos</li>
-  <li>Making sound</li>
+  <li>Display: 64x48 OLED Display</li>
+  <li>Microcontroller: ATmega328P </li>
+  <li>Operating Voltage: 5V</li>
+  <li>Input Voltage: 3.3VDC - 16VDC</li>
+  <li>Digital I/O Pins: 12 (of which 3 provide PWM output)</li>
+  <li>Analog Input Pins: 6</li>
+  <li>Flash Memory: 32 KB</li>
+  <li>SRAM: 2 KB</li>
+  <li>EEPROM: 1 Kilobyte</li>
+  <li>Clock Speed: 16 Mhz</li>
+  <li>No other components required</li>
 </ul>
 
-<p>The MicroView’s pins have standard spacing meaning they’re both DIP (dual inline package) and breadboard compatible.</p>
+<h1 id="pin-configuration">Pin Configuration</h1>
+<p><img src="/images/MicroView_pinout.png" alt="MicroView pinout" /></p>
 
-<h3 id="how-do-you-use-a-microview">How do you use a MicroView?</h3>
+<h1 id="oled-memory-map">OLED Memory Map</h1>
+<p>The <a href="http://www.solomon-systech.com/en/product/display-ic/oled-driver-controller/ssd1306/">SSD1306</a> is the controller built-in the MicroView’s OLED.  It has flexible yet complex segment and common drivers.  One requires vast knowledge on memory addressing in order to use the SSD1306 controller.</p>
 
-<p>See the <a href="#">Getting Started with MicroView</a> guide.</p>
+<p>MicroView’s library was written to wrap around the complexities of the SSD1306 controller, so that user can issue simple commands to control the display. Although the SSD1306 has a built-in RAM (memory) for the screen, when connected using the SPI method, ATmega328P is not able to read the RAM (memory) of the SSD1306. Therefore the software will not be able to manipulate the screen memory to perform mathematical operation on the screen memory.</p>
+
+<p>MicroView’s library overcome this by allocating a 384 bytes ( (64 x 48)/8 bits) of memory from ATmega328P as buffer. The library can now manipulates the buffer memory and then perform a bulk transfer from the ATmega328P’s memory to the internal memory of the SSD1306 controller. </p>
+
+<p>The 384 bytes of buffer memory are declared in MicroView’s library as</p>
+
+<pre><code>static uint8_t screenmemory [] = {.total 384 bytes of data..};
+</code></pre>
+
+<p>and are arranged in a linear form representing the following 64 x 48 pixels coordinate system.</p>
+
+<p><img src="/images/MicroView_Coordinates.png" alt="MicroView Coordinate System" /></p>
+
+<p>Based on the above illustration, for example, if a user wish to plot a pixel at the position of the black dot, where X=10 and Y=2, user issue the following command:</p>
+
+<pre><code>uView.pixel(10,2);
+</code></pre>
+
+<p>This command will then calculate the exact location of the buffer memory and set a BIT in the BYTE corresponding to the X,Y position.</p>
+
+<p><img src="/images/MicroView_MemoryMap.png" alt="MicroView Memory Map" />
+<em>Diagram showing how a linear buffer memory in the ATmega328P aligns with the OLED pixels.</em></p>
+
+<p><img src="/images/MicroView_DataBits.png" alt="MicroView Data Bits" />
+<em>Diagram showing the BITs in a BYTE of the buffer memory corresponding to the OLED’s X,Y position.</em></p>
+
+<p>Based on the above illustration, a pixel turned on at X=2 and Y=3 means BYTE 2 of the buffer memory has a data of 0x08 (hex). </p>
+
+<p>Two pixels at X=2,Y=3 and X=2,Y=2 turned on means BYTE 2 of the buffer memory has a data of 0x0c (hex).</p>
+
+<p>To draw a straight line of 5 pixels starting from 10,2 to 10,2 , the following C codes show a simple way on how to accomplish this.</p>
+
+<pre><code>uView.pixel(10,2);
+uView.pixel(10,3);
+uView.pixel(10,4);
+uView.pixel(10,5);
+uView.pixel(10,6);
+</code></pre>
+
+<p>In order for the library to perform extremely fast draw (more than 100 frames per second), all drawing function in the MicroView’s library does not immediately transfer the buffer memory to the SSD1306 controller. A <code>display()</code> command is required to instruct the library to perform the bulk transfer from the buffer memory to the SSD1306 controller:</p>
+
+<pre><code>uView.display();
+</code></pre>
+
+<p>This function take the whole buffer memory in the ATmega328P and transfer them via SPI bus (programmed at 8Mhz) to the internal memory of the SSD1306. As soon as the memory is being transferred, the pixels corresponding to the buffer memory will show up on the OLED.</p>
 
 				</span>
-				<div class="journal-date">Published 04 May 2014</div>
+				<div class="journal-date">Published 04 June 2014</div>
 				<div class="journal-tags">
 				
 				
@@ -232,6 +272,30 @@
 		<a class="tag-cont" href="/tags.html#introduction-ref">
 			<div class="tag-l"></div>
 			<div class="tag-c">introduction</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#overview-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">overview</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#memory map-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">memory map</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#ssd1306-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">ssd1306</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#screen memory-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">screen memory</div>
 			<div class="tag-r"></div>
 		</a>
 	
@@ -251,7 +315,7 @@
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_developer = 1;
-    var disqus_identifier = '2014-05-04-introduction.md';
+    var disqus_identifier = '2014-06-04-general-overview-of-microview.md';
     var disqus_shortname = 'learnmicroview'; // required: replace example with your forum shortname
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -304,24 +368,12 @@
 
   
      
-    	<li><a href="/categories.html#sample-ref">
-    		sample <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#lessons-ref">
-    		lessons <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#testing-ref">
-    		testing <span>2</span>
-    	</a></li>
-     
     	<li><a href="/categories.html#example-ref">
-    		example <span>4</span>
+    		example <span>1</span>
     	</a></li>
      
-    	<li><a href="/categories.html#custom-ref">
-    		custom <span>1</span>
+    	<li><a href="/categories.html#intro-ref">
+    		intro <span>1</span>
     	</a></li>
     
   
@@ -340,17 +392,9 @@
   
     
       
-    
-  
-    
-      
       	
-      	<li><a href="/categories.html">Categories</a></li>
+      	<li><a href="/search.html">Search</a></li>
       	
-      
-    
-  
-    
       
     
   
@@ -364,9 +408,9 @@
   
     
       
-      	
-      	<li><a href="/about.html">About Us</a></li>
-      	
+    
+  
+    
       
     
   
@@ -381,19 +425,27 @@
     
       
       	
-      	<li><a href="/search.html">Search</a></li>
+      	<li><a href="/categories.html">Categories</a></li>
       	
       
     
   
     
-  
-    
+      
+      	
+      	<li><a href="/about.html">About Us</a></li>
+      	
       
     
   
     
       
+    
+  
+    
+      
+    
+  
     
   
 

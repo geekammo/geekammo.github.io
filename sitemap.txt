@@ -1,21 +1,14 @@
 
-http://learn.microview.io/404.html
-http://learn.microview.io/categories.html
-http://learn.microview.io/rss.xml
-http://learn.microview.io/tags.html
-http://learn.microview.io/about.html
-http://learn.microview.io/archive.html
 http://learn.microview.io/search.html
-http://learn.microview.io/index.html
-http://learn.microview.io/atom.xml
+http://learn.microview.io/tags.html
 http://learn.microview.io/sitemap.txt
+http://learn.microview.io/rss.xml
+http://learn.microview.io/archive.html
+http://learn.microview.io/categories.html
+http://learn.microview.io/about.html
+http://learn.microview.io/atom.xml
+http://learn.microview.io/404.html
+http://learn.microview.io/index.html
 
-http://learn.microview.io/example/2014/05/04/introduction
+http://learn.microview.io/intro/2014/06/04/general-overview-of-microview
 http://learn.microview.io/example/2014/05/04/getting-started
-http://learn.microview.io/example/2013/08/16/code-highlighting-post
-http://learn.microview.io/testing/2013/08/12/sample-link-post
-http://learn.microview.io/custom/2013/05/23/readability-feature-post
-http://learn.microview.io/example/2013/05/22/sample-post-images
-http://learn.microview.io/testing/2012/05/22/readability-post
-http://learn.microview.io/lessons/2011/12/29/jekyll-introduction
-http://learn.microview.io/sample/2011/03/10/sample-post
