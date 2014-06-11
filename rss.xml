@@ -5,14 +5,14 @@
         <description>Learn MicroView - Geek Ammo</description>
         <link>http://learn.microview.io</link>
         <link>http://learn.microview.io</link>
-        <lastBuildDate>2014-06-11T19:05:05+10:00</lastBuildDate>
-        <pubDate>2014-06-11T19:05:05+10:00</pubDate>
+        <lastBuildDate>2014-06-12T09:02:26+10:00</lastBuildDate>
+        <pubDate>2014-06-12T09:02:26+10:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Creating Fonts for MicroView</title>
-                <description>&lt;p&gt;From the previous article &lt;a href=&quot;/intro/2014/06/04/general-overview-of-microview&quot;&gt;General Overview of MicroView&lt;/a&gt;, we have covered how the &lt;a href=&quot;https://github.com/geekammo/MicroView-Arduino-Library&quot;&gt;MicroView library&lt;/a&gt; allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
+                <description>&lt;p&gt;From the previous article &lt;a href=&quot;/intro/general-overview-of-microview.html&quot;&gt;General Overview of MicroView&lt;/a&gt;, we have covered how the &lt;a href=&quot;https://github.com/geekammo/MicroView-Arduino-Library&quot;&gt;MicroView library&lt;/a&gt; allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
 The following diagram shows how two 5x8 pixel characters are drawn on the screen buffer.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/MicroView_5x8_FontMapping.png&quot; alt=&quot;MicroView 5x8 Font Mapping&quot; /&gt;&lt;/p&gt;
@@ -280,8 +280,8 @@ void loop () {
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-                <link>http://learn.microview.io/intro/2014/06/11/creating-fonts-for-microview</link>
-                <guid>http://learn.microview.io/intro/2014/06/11/creating-fonts-for-microview</guid>
+                <link>http://learn.microview.io/intro/creating-fonts-for-microview.html</link>
+                <guid>http://learn.microview.io/intro/creating-fonts-for-microview</guid>
                 <pubDate>2014-06-11T00:00:00+10:00</pubDate>
         </item>
 
@@ -365,8 +365,8 @@ uView.pixel(10,6);
 
 &lt;p&gt;This function take the whole buffer memory in the ATmega328P and transfer them via SPI bus (programmed at 8Mhz) to the internal memory of the SSD1306. As soon as the memory is being transferred, the pixels corresponding to the buffer memory will show up on the OLED.&lt;/p&gt;
 </description>
-                <link>http://learn.microview.io/intro/2014/06/04/general-overview-of-microview</link>
-                <guid>http://learn.microview.io/intro/2014/06/04/general-overview-of-microview</guid>
+                <link>http://learn.microview.io/intro/general-overview-of-microview.html</link>
+                <guid>http://learn.microview.io/intro/general-overview-of-microview</guid>
                 <pubDate>2014-06-04T00:00:00+10:00</pubDate>
         </item>
 
@@ -412,8 +412,8 @@ uView.pixel(10,6);
 
 &lt;h3 id=&quot;download-and-install-the-microview-library&quot;&gt;Download and install the “MicroView Library”&lt;/h3&gt;
 </description>
-                <link>http://learn.microview.io/example/2014/05/04/getting-started</link>
-                <guid>http://learn.microview.io/example/2014/05/04/getting-started</guid>
+                <link>http://learn.microview.io/intro/getting-started.html</link>
+                <guid>http://learn.microview.io/intro/getting-started</guid>
                 <pubDate>2014-05-04T00:00:00+10:00</pubDate>
         </item>
 

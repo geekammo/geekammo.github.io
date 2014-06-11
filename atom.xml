@@ -4,7 +4,7 @@
  <title>Learn MicroView</title>
  <link href="http://learn.microview.io/" rel="self"/>
  <link href="http://learn.microview.io"/>
- <updated>2014-06-11T19:05:05+10:00</updated>
+ <updated>2014-06-12T09:02:26+10:00</updated>
  <id>http://learn.microview.io</id>
  <author>
    <name>Geek Ammo</name>
@@ -14,10 +14,10 @@
  
  <entry>
    <title>Creating Fonts for MicroView</title>
-   <link href="http://learn.microview.io/intro/2014/06/11/creating-fonts-for-microview"/>
+   <link href="http://learn.microview.io/intro/creating-fonts-for-microview.html"/>
    <updated>2014-06-11T00:00:00+10:00</updated>
-   <id>http://learn.microview.io/intro/2014/06/11/creating-fonts-for-microview</id>
-   <content type="html">&lt;p&gt;From the previous article &lt;a href=&quot;/intro/2014/06/04/general-overview-of-microview&quot;&gt;General Overview of MicroView&lt;/a&gt;, we have covered how the &lt;a href=&quot;https://github.com/geekammo/MicroView-Arduino-Library&quot;&gt;MicroView library&lt;/a&gt; allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
+   <id>http://learn.microview.io/intro/creating-fonts-for-microview</id>
+   <content type="html">&lt;p&gt;From the previous article &lt;a href=&quot;/intro/general-overview-of-microview.html&quot;&gt;General Overview of MicroView&lt;/a&gt;, we have covered how the &lt;a href=&quot;https://github.com/geekammo/MicroView-Arduino-Library&quot;&gt;MicroView library&lt;/a&gt; allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
 The following diagram shows how two 5x8 pixel characters are drawn on the screen buffer.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/MicroView_5x8_FontMapping.png&quot; alt=&quot;MicroView 5x8 Font Mapping&quot; /&gt;&lt;/p&gt;
@@ -289,9 +289,9 @@ void loop () {
  
  <entry>
    <title>General Overview of MicroView</title>
-   <link href="http://learn.microview.io/intro/2014/06/04/general-overview-of-microview"/>
+   <link href="http://learn.microview.io/intro/general-overview-of-microview.html"/>
    <updated>2014-06-04T00:00:00+10:00</updated>
-   <id>http://learn.microview.io/intro/2014/06/04/general-overview-of-microview</id>
+   <id>http://learn.microview.io/intro/general-overview-of-microview</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/MicroView_Hero.jpg&quot; alt=&quot;MicroView Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The MicroView is the first chip-sized Arduino compatible that lets you see what your Arduino is thinking using a built-in OLED display. In the heart of MicroView there is an ATMEL’s ATmega328P, 5V &amp;amp; 3.3V LDO and a 64x48 pixel OLED display, together with other passive components that allow the MicroView to operate without any external components other than a power supply.&lt;/p&gt;
@@ -374,9 +374,9 @@ uView.pixel(10,6);
  
  <entry>
    <title>Getting Started with MicroView</title>
-   <link href="http://learn.microview.io/example/2014/05/04/getting-started"/>
+   <link href="http://learn.microview.io/intro/getting-started.html"/>
    <updated>2014-05-04T00:00:00+10:00</updated>
-   <id>http://learn.microview.io/example/2014/05/04/getting-started</id>
+   <id>http://learn.microview.io/intro/getting-started</id>
    <content type="html">&lt;h3 id=&quot;download-arduino-software-ide&quot;&gt;Download Arduino Software (IDE)&lt;/h3&gt;
 
 &lt;p&gt;In order to get your MicroView up and running you’ll need the latest version of the Arduino software available from the Arduino Website. The Arduino software (also known as the Arduino IDE), lets you program you MicroView (and other Arduinos). &lt;/p&gt;
