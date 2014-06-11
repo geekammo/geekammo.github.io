@@ -1,14 +1,15 @@
 
-http://learn.microview.io/search.html
-http://learn.microview.io/tags.html
-http://learn.microview.io/sitemap.txt
-http://learn.microview.io/rss.xml
-http://learn.microview.io/archive.html
-http://learn.microview.io/categories.html
-http://learn.microview.io/about.html
-http://learn.microview.io/atom.xml
 http://learn.microview.io/404.html
+http://learn.microview.io/categories.html
+http://learn.microview.io/rss.xml
+http://learn.microview.io/tags.html
+http://learn.microview.io/about.html
+http://learn.microview.io/archive.html
+http://learn.microview.io/search.html
 http://learn.microview.io/index.html
+http://learn.microview.io/atom.xml
+http://learn.microview.io/sitemap.txt
 
+http://learn.microview.io/intro/2014/06/11/creating-fonts-for-microview
 http://learn.microview.io/intro/2014/06/04/general-overview-of-microview
 http://learn.microview.io/example/2014/05/04/getting-started
