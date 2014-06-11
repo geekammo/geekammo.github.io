@@ -4,7 +4,7 @@
  <title>Learn MicroView</title>
  <link href="http://learn.microview.io/" rel="self"/>
  <link href="http://learn.microview.io"/>
- <updated>2014-06-11T18:17:48+10:00</updated>
+ <updated>2014-06-11T18:20:08+10:00</updated>
  <id>http://learn.microview.io</id>
  <author>
    <name>Geek Ammo</name>
@@ -124,7 +124,7 @@ BYTE71 = 0xff
 
 &lt;h1 id=&quot;generating-font-source-file-from-bitmap&quot;&gt;Generating Font Source File from Bitmap&lt;/h1&gt;
 
-&lt;p&gt;In order to convert the font from bitmap to C char definition, we will be using &lt;a href=&quot;http://en.radzio.dxp.pl/bitmap_converter&quot;&gt;LCD Assistant&lt;/a&gt; for this job. Run LCD Assistant and load the &lt;code&gt;12x24Font.bmp&lt;/code&gt; file previously saved.&lt;/p&gt;
+&lt;p&gt;In order to convert the font from bitmap to &lt;code&gt;C char&lt;/code&gt; definition, we will be using &lt;a href=&quot;http://en.radzio.dxp.pl/bitmap_converter&quot;&gt;LCD Assistant&lt;/a&gt; for this job. Run LCD Assistant and load the &lt;code&gt;12x24Font.bmp&lt;/code&gt; file previously saved.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/LCD_Assistant.png&quot; alt=&quot;LCD Assistant&quot; /&gt;&lt;/p&gt;
 
