@@ -10,6 +10,6 @@ http://learn.microview.io/index.html
 http://learn.microview.io/atom.xml
 http://learn.microview.io/sitemap.txt
 
-http://learn.microview.io/intro/creating-fonts-for-microview.html
+http://learn.microview.io/font/creating-fonts-for-microview.html
 http://learn.microview.io/intro/general-overview-of-microview.html
 http://learn.microview.io/intro/getting-started.html

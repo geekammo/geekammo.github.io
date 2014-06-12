@@ -4,7 +4,7 @@
  <title>Learn MicroView</title>
  <link href="http://learn.microview.io/" rel="self"/>
  <link href="http://learn.microview.io"/>
- <updated>2014-06-12T14:39:18+10:00</updated>
+ <updated>2014-06-13T09:21:03+10:00</updated>
  <id>http://learn.microview.io</id>
  <author>
    <name>Geek Ammo</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Creating Fonts for MicroView</title>
-   <link href="http://learn.microview.io/intro/creating-fonts-for-microview.html"/>
+   <link href="http://learn.microview.io/font/creating-fonts-for-microview.html"/>
    <updated>2014-06-11T00:00:00+10:00</updated>
-   <id>http://learn.microview.io/intro/creating-fonts-for-microview</id>
+   <id>http://learn.microview.io/font/creating-fonts-for-microview</id>
    <content type="html">&lt;p&gt;From the previous article &lt;a href=&quot;/intro/general-overview-of-microview.html&quot;&gt;General Overview of MicroView&lt;/a&gt;, we have covered how the &lt;a href=&quot;https://github.com/geekammo/MicroView-Arduino-Library&quot;&gt;MicroView library&lt;/a&gt; allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
 The following diagram shows how two 5x8 pixel characters are drawn on the screen buffer.&lt;/p&gt;
 

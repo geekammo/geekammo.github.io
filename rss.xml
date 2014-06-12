@@ -5,8 +5,8 @@
         <description>Learn MicroView - Geek Ammo</description>
         <link>http://learn.microview.io</link>
         <link>http://learn.microview.io</link>
-        <lastBuildDate>2014-06-12T14:39:18+10:00</lastBuildDate>
-        <pubDate>2014-06-12T14:39:18+10:00</pubDate>
+        <lastBuildDate>2014-06-13T09:21:03+10:00</lastBuildDate>
+        <pubDate>2014-06-13T09:21:03+10:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -287,8 +287,8 @@ void loop () {
 &lt;p class=&quot;success&quot;&gt;You have now successfully hacked MicroView&#39;s library with your own custom font.&lt;/p&gt;
 
 </description>
-                <link>http://learn.microview.io/intro/creating-fonts-for-microview.html</link>
-                <guid>http://learn.microview.io/intro/creating-fonts-for-microview</guid>
+                <link>http://learn.microview.io/font/creating-fonts-for-microview.html</link>
+                <guid>http://learn.microview.io/font/creating-fonts-for-microview</guid>
                 <pubDate>2014-06-11T00:00:00+10:00</pubDate>
         </item>
 
