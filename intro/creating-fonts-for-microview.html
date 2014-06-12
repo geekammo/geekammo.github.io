@@ -233,7 +233,7 @@ BYTE70 = 0xff
 BYTE71 = 0xff
 </code></pre>
 
-<p>Manually plotting fonts is a very tedious task, MicroView’s library was written to remove the burden of this tedious task from the users with its built-in fonts printing functions. Displaying a font in MicroView is as simple as:</p>
+<p class="info">Manually plotting fonts and text is a very tedious task, MicroView's library was written to remove the burden of this tedious task from the users with its built-in fonts printing functions. Displaying text in MicroView is as simple as:</p>
 
 <pre><code>uView.print("Hello");
 </code></pre>
@@ -291,6 +291,8 @@ BYTE71 = 0xff
 
 <p>Save the image and then proceed to next step. You can also save the hassle by downloading the <a href="/images/12x24Font.bmp">12x24Font.bmp</a> already prepared by us.</p>
 
+<p class="success">You have now successfully created a customised bitmap font.</p>
+
 <h1 id="generating-font-source-file-from-bitmap">Generating Font Source File from Bitmap</h1>
 
 <p>In order to convert the font from bitmap to <code>C char</code> definition, we will be using <a href="http://en.radzio.dxp.pl/bitmap_converter">LCD Assistant</a> for this job. Run LCD Assistant and load the <code>12x24Font.bmp</code> file previously saved.</p>
@@ -313,7 +315,7 @@ BYTE71 = 0xff
 
 <p>Using a text file editor, open <code>12x24Font.h</code></p>
 
-<p>Cut the line</p>
+<p>Locate</p>
 
 <pre><code>const unsigned char 12x24Font [] = {
 </code></pre>
@@ -378,6 +380,8 @@ static const unsigned char font12x24 [] PROGMEM = {
 };
 #endif
 </code></pre>
+
+<p class="success">You have now successfully converted the bitmap font to C header file.</p>
 
 <h1 id="adding-font-source-file-to-microview-library">Adding Font Source File to MicroView Library</h1>
 
@@ -453,6 +457,9 @@ void setup() {
 void loop () {
 }
 </code></pre>
+
+<p class="success">You have now successfully hacked MicroView's library with your own custom font.</p>
+
 
 				</span>
 				<div class="journal-date">Published 11 June 2014</div>

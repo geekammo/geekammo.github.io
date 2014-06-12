@@ -4,7 +4,7 @@
  <title>Learn MicroView</title>
  <link href="http://learn.microview.io/" rel="self"/>
  <link href="http://learn.microview.io"/>
- <updated>2014-06-12T09:02:26+10:00</updated>
+ <updated>2014-06-12T10:49:42+10:00</updated>
  <id>http://learn.microview.io</id>
  <author>
    <name>Geek Ammo</name>
@@ -64,7 +64,7 @@ BYTE70 = 0xff
 BYTE71 = 0xff
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Manually plotting fonts is a very tedious task, MicroView’s library was written to remove the burden of this tedious task from the users with its built-in fonts printing functions. Displaying a font in MicroView is as simple as:&lt;/p&gt;
+&lt;p class=&quot;info&quot;&gt;Manually plotting fonts and text is a very tedious task, MicroView&#39;s library was written to remove the burden of this tedious task from the users with its built-in fonts printing functions. Displaying text in MicroView is as simple as:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;uView.print(&quot;Hello&quot;);
 &lt;/code&gt;&lt;/pre&gt;
@@ -122,6 +122,8 @@ BYTE71 = 0xff
 
 &lt;p&gt;Save the image and then proceed to next step. You can also save the hassle by downloading the &lt;a href=&quot;/images/12x24Font.bmp&quot;&gt;12x24Font.bmp&lt;/a&gt; already prepared by us.&lt;/p&gt;
 
+&lt;p class=&quot;success&quot;&gt;You have now successfully created a customised bitmap font.&lt;/p&gt;
+
 &lt;h1 id=&quot;generating-font-source-file-from-bitmap&quot;&gt;Generating Font Source File from Bitmap&lt;/h1&gt;
 
 &lt;p&gt;In order to convert the font from bitmap to &lt;code&gt;C char&lt;/code&gt; definition, we will be using &lt;a href=&quot;http://en.radzio.dxp.pl/bitmap_converter&quot;&gt;LCD Assistant&lt;/a&gt; for this job. Run LCD Assistant and load the &lt;code&gt;12x24Font.bmp&lt;/code&gt; file previously saved.&lt;/p&gt;
@@ -144,7 +146,7 @@ BYTE71 = 0xff
 
 &lt;p&gt;Using a text file editor, open &lt;code&gt;12x24Font.h&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Cut the line&lt;/p&gt;
+&lt;p&gt;Locate&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;const unsigned char 12x24Font [] = {
 &lt;/code&gt;&lt;/pre&gt;
@@ -209,6 +211,8 @@ static const unsigned char font12x24 [] PROGMEM = {
 };
 #endif
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p class=&quot;success&quot;&gt;You have now successfully converted the bitmap font to C header file.&lt;/p&gt;
 
 &lt;h1 id=&quot;adding-font-source-file-to-microview-library&quot;&gt;Adding Font Source File to MicroView Library&lt;/h1&gt;
 
@@ -284,6 +288,9 @@ void setup() {
 void loop () {
 }
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p class=&quot;success&quot;&gt;You have now successfully hacked MicroView&#39;s library with your own custom font.&lt;/p&gt;
+
 </content>
  </entry>
  
@@ -296,20 +303,20 @@ void loop () {
 
 &lt;p&gt;The MicroView is the first chip-sized Arduino compatible that lets you see what your Arduino is thinking using a built-in OLED display. In the heart of MicroView there is an ATMEL’s ATmega328P, 5V &amp;amp; 3.3V LDO and a 64x48 pixel OLED display, together with other passive components that allow the MicroView to operate without any external components other than a power supply.&lt;/p&gt;
 
-&lt;p&gt;MicroView is 100% code compatible with Arduino Uno (ATmega328P version), meaning code that runs in Arduino Uno will also be able to run in MicroView as long as the IO pins used in the code is externally exposed in MicroView. &lt;/p&gt;
+&lt;p class=&quot;info&quot;&gt;MicroView is 100% code compatible with Arduino Uno (ATmega328P version), meaning code that runs in Arduino Uno will also be able to run in MicroView as long as the IO pins used in the code is externally exposed in MicroView.&lt;/p&gt;
 
 &lt;h1 id=&quot;hardware-specifications&quot;&gt;Hardware Specifications&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;Display: 64x48 OLED Display&lt;/li&gt;
-  &lt;li&gt;Microcontroller: ATmega328P &lt;/li&gt;
-  &lt;li&gt;Operating Voltage: 5V&lt;/li&gt;
-  &lt;li&gt;Input Voltage: 3.3VDC - 16VDC&lt;/li&gt;
-  &lt;li&gt;Digital I/O Pins: 12 (of which 3 provide PWM output)&lt;/li&gt;
-  &lt;li&gt;Analog Input Pins: 6&lt;/li&gt;
-  &lt;li&gt;Flash Memory: 32 KB&lt;/li&gt;
-  &lt;li&gt;SRAM: 2 KB&lt;/li&gt;
-  &lt;li&gt;EEPROM: 1 Kilobyte&lt;/li&gt;
-  &lt;li&gt;Clock Speed: 16 Mhz&lt;/li&gt;
+  &lt;li&gt;Display : 64x48 OLED Display&lt;/li&gt;
+  &lt;li&gt;Microcontroller : ATmega328P &lt;/li&gt;
+  &lt;li&gt;Operating Voltage : 5V&lt;/li&gt;
+  &lt;li&gt;Input Voltage : 3.3VDC - 16VDC&lt;/li&gt;
+  &lt;li&gt;Digital I/O Pins : 12 (of which 3 provide PWM output)&lt;/li&gt;
+  &lt;li&gt;Analog Input Pins : 6&lt;/li&gt;
+  &lt;li&gt;Flash Memory : 32 KB&lt;/li&gt;
+  &lt;li&gt;SRAM : 2 KB&lt;/li&gt;
+  &lt;li&gt;EEPROM : 1 Kilobyte&lt;/li&gt;
+  &lt;li&gt;Clock Speed : 16 Mhz&lt;/li&gt;
   &lt;li&gt;No other components required&lt;/li&gt;
 &lt;/ul&gt;
 
