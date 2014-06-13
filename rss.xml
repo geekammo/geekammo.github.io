@@ -5,8 +5,8 @@
         <description>Learn MicroView - Geek Ammo</description>
         <link>http://learn.microview.io</link>
         <link>http://learn.microview.io</link>
-        <lastBuildDate>2014-06-13T20:19:49+10:00</lastBuildDate>
-        <pubDate>2014-06-13T20:19:49+10:00</pubDate>
+        <lastBuildDate>2014-06-13T20:45:08+10:00</lastBuildDate>
+        <pubDate>2014-06-13T20:45:08+10:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -359,7 +359,7 @@ uView.pixel(10,5);
 uView.pixel(10,6);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;but in normal situation, to draw a straight line from 10,5 to 10,6 we just need a single line command:&lt;/p&gt;
+&lt;p&gt;but in normal situation, to draw a straight line from 10,2 to 10,6 we just need a single line command:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;uView.line(10,2,10,6);
 &lt;/code&gt;&lt;/pre&gt;
