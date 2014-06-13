@@ -186,45 +186,128 @@
 				<h1 class="journal-title">Getting Started with MicroView<span class="author"></span>
 				</h1>
 				<span class="the-article">
-				<h3 id="download-arduino-software-ide">Download Arduino Software (IDE)</h3>
-
-<p>In order to get your MicroView up and running you’ll need the latest version of the Arduino software available from the Arduino Website. The Arduino software (also known as the Arduino IDE), lets you program you MicroView (and other Arduinos). </p>
-
-<p>To get the Arduino software visit: <a href="arduino.cc/en/main/software">arduino.cc/en/main/software</a>.</p>
-
-<h3 id="install-drivers">Install Drivers</h3>
-
-<p>Use the MicroView USB programmer or FTDI cable to connect your MicroView to one of your computer’s USB ports. The MicroView USB programmer uses a special <em>FTDI chip</em> to convert the signals from your computer’s USB port into serial signals compatible with your MicroView. This <em>FTDI chip</em> requires special drivers to be installed on your computer.</p>
-
-<h4 id="installing-ftdi-drivers-on-windows">Installing FTDI drivers on Windows</h4>
-
-<h4 id="installing-ftdi-drivers-on-mac">Installing FTDI drivers on Mac</h4>
+				<p>In order to get your MicroView up and running, there are four easy steps to follow: </p>
 
 <ol>
-  <li>
-    <p>Head over to the FTDI site. Look on the left side for ‘Drivers,’ and then choose ‘VCP Drivers’.</p>
-  </li>
-  <li>
-    <p>Now we need to determine if you need the x86 or x64 bit version of the drivers. Click on the apple icon in the top left of the screen, and choose ‘About this Mac’.</p>
-  </li>
-  <li>
-    <p>Check under ‘Processor’ to see which version you have. Follow the chart below to determine which drivers to download.</p>
-  </li>
-  <li>
-    <p>Download the files from the site by clicking on the link. Locate the .dmg file that was downloaded to your computer, and double click on it. If you are not sure which version of OS X you have, use the same process as before when finding the processor type. Click on the apple and choose ‘About This Mac’. You will then see Version 10.X.Y–use the 10.X to determine your system version.</p>
-  </li>
-  <li>
-    <p>Continue through the installation, and wait for it to finish. Then click ‘Close.’</p>
-  </li>
+  <li>Install drivers.</li>
+  <li>Prepare MicroView for programming</li>
+  <li>Choose Arduino software</li>
+  <li>Write your first sketch</li>
 </ol>
 
-<h4 id="installing-ftdi-drivers-on-linux">Installing FTDI drivers on Linux</h4>
+<h2 id="step-1---install-drivers">STEP 1 - Install Drivers</h2>
+<p>MicroView, like the Arduino, relies on a programmer to upload sketches (Arduino code) and also communicate with the computer. This programmer often has a USB to TTL converter chip that creates a Virtual Serial Port on the computer when properly installed.  MicroView’s <a href="https://www.sparkfun.com/products/12924">factory USB Programmer</a> uses the <a href="http://www.ftdichip.com/Products/ICs/FT231X.html">FTDI’s FT231X</a> to send the sketches to MicroView and also act as a communication medium between MicroView and computer.</p>
 
-<h3 id="identify-your-hardware">Identify Your Hardware</h3>
+<p>Depending on the OS (Operating System) of your computer, the drivers are installed using different methods.  Below are the installation instructions prepared by SparkFun Electronics:</p>
 
-<p>Your MicroView and the Arduino UNO are interchangeable but you won’t find the MicroView listed in the Arduino Software. Select “Arduino UNO” instead.</p>
+<ul>
+  <li><a href="https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/windows---quick-and-easy">How to Install FTDI Drivers for Windows</a></li>
+  <li><a href="https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/linux">How to Install FTDI Drivers for Linux</a></li>
+  <li><a href="https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/mac">How to Intall FTDI Drivers for Mac</a></li>
+</ul>
 
-<h3 id="download-and-install-the-microview-library">Download and install the “MicroView Library”</h3>
+<h2 id="step-2---prepare-microview-for-programming">STEP 2 - Prepare MicroView for Programming</h2>
+
+<p>Once you have finished the FTDI Drivers installation, you will need to prepare the MicroView to be inserted into the computer’s USB port.</p>
+
+<p>If you have purchased the <a href="https://www.sparkfun.com/products/12924">factory USB Programmer</a>, just insert the MicroView into the USB Programmer following the photo below.  Please take note that at the back of MicroView, there is a round dot marking showing the Pin 1 of the MicroView where you need to match the Pin 1 of the USB Programmer.</p>
+
+<p><img src="/images/MicroView_Factory_Programmer.jpg" alt="MicroView Factory USB Programmer" /></p>
+
+<p>Once you have inserted the MicroView into the USB Programmer, you can now insert the USB Programmer into the USB port of the computer as below.  If your computer does not have a right-sided USB port, please use a <a href="https://www.sparkfun.com/products/517">USB Cable Extension</a> to extend the USB port to the front so that you can easily work with the MicroView.</p>
+
+<p><img src="/images/MicroView_Programmer_To_Computer.jpg" alt="MicroView USB Programmer Connects to Computer" /></p>
+
+<p>If you have not purchase the factory USB Programmer and have <a href="https://www.sparkfun.com/products/9716">FTDI Basic Breakout -5V</a> or <a href="https://www.sparkfun.com/products/9718">FTDI Cable 5V</a> lying around, they can also be used as a MicroView programmer. Connect the FTDI Basic Breakout board as below, and you are ready to go.</p>
+
+<p><img src="/images/MicroView_FTDI_Programmer.svg" width="700" title="MicroView FTDI Basic Programmer Connection" /></p>
+
+<p class="success">You have now successfully prepared the MicroView for programming.</p>
+
+<h2 id="step-3---choose-the-right-arduino-software-ide">STEP 3 - Choose the Right Arduino Software (IDE)</h2>
+
+<p>There are currently two options when selecting the Arduino Sofware (IDE). The first option is to use the cloud based <a href="https://codebender.cc">Codebender</a> and the second option is to use <a href="http://arduino.cc/en/main/software">Arduino IDE.</a></p>
+
+<p class="info">As our Learning Kit's tutorials are based on Codebender, and Codebender has already included MicroView's library in their cloud solution, we highly recommend users to use Codebender for our tutorials.</p>
+
+<h3 id="using-codebender">Using Codebender</h3>
+
+<p>Installing Codebender is really simple, the prerequisite is just Chrome or Firefox browser.  Using Chrome or Firefox, browse to <a href="https://codebender.cc/static/walkthrough/page/1">Codebender’s Getting Started page</a> and then follow the steps below (shown using Firefox browser).</p>
+
+<p><img src="/images/Codebender_Step01.png" alt="MicroView install Codebender Step 1" /></p>
+
+<p>Click <code>Let's Go!</code></p>
+
+<p><img src="/images/Codebender_Step02.png" alt="MicroView install Codebender Step 2" /></p>
+
+<p>Click <code>Add to Firefox.</code></p>
+
+<p><img src="/images/Codebender_Step03.png" alt="MicroView install Codebender Step 3" /></p>
+
+<p>Click <code>Allow</code> when you see the message “Firefox prevented this site (codebender.cc) from asking you to install software on your computer.”</p>
+
+<p><img src="/images/Codebender_Step04.png" alt="MicroView install Codebender Step 4" /></p>
+
+<p>Wait for the <code>Add-on downloading</code> to finish.</p>
+
+<p><img src="/images/Codebender_Step05.png" alt="MicroView install Codebender Step 5" /></p>
+
+<p>Click <code>Install Now</code></p>
+
+<p><img src="/images/Codebender_Step06.png" alt="MicroView install Codebender Step 6" /></p>
+
+<p>Click <code>Restart Now</code> when you see the message “Codebender.cc Plugin will be installed after you restart Firefox.”</p>
+
+<p class="success">You have now successfully installed Codebender on your browser. Please proceed to STEP 4 – Write Your First Sketch</p>
+
+<h3 id="install-arduino-ide">Install Arduino IDE</h3>
+
+<p>Installing Arduino IDE is normally straight forward, however it is still a bit challenging if one has never try before.  Luckily our partner SparkFun have already published step by step guides on:</p>
+
+<ul>
+  <li><a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide/windows">Installing Arduino IDE for Windows</a></li>
+  <li><a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide/mac">Installing Arduino IDE for Mac</a></li>
+  <li><a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide/linux">Installing Arduino IDE for Linux</a></li>
+</ul>
+
+<p class="info">After installation of the Arduino IDE has completed, unlike Codebender, you will still need to install MicroView's library.</p>
+
+<h3 id="install-microview-library">Install MicroView Library</h3>
+
+<p>Download MicroView’s library from our github repo below:</p>
+
+<p><a href="https://github.com/geekammo/MicroView-Arduino-Library/archive/master.zip">MicroView Library Github Repo</a></p>
+
+<p>Save the ZIP file to your download folder then unzip the ZIP file. Rename the folder name from <code>MicroView-Arduino-Library-master</code> to <code>MicroView</code>.</p>
+
+<p><img src="/images/MicroView_Rename_Library_Folder.png" alt="MicroView Rename Library Folder" /></p>
+
+<p>Execute Arduino IDE, click Sketch, Import Library and then Add Library.</p>
+
+<p><img src="/images/MicroView_Add_Library.png" alt="Add MicroView Library to Arduino IDE" /></p>
+
+<p>Browse to the <code>MicroView</code> folder that was renamed and select that folder.  MicroView library will be automatically installed.</p>
+
+<p>Click File, Example, and find MicroView Example to confirm the installation.</p>
+
+<p><img src="/images/MicroView_Library_Installed.png" alt="MicroView Library Installed" /></p>
+
+<h2 id="step-4---write-your-first-sketch">STEP 4 - Write Your First Sketch</h2>
+
+<pre><code>#include &lt;MicroView.h&gt;
+ 
+void setup() {
+  uView.begin();
+  uView.clear(PAGE);
+  uView.print("HelloWorld");
+  uView.display();
+}
+ 
+void loop () {
+}
+</code></pre>
+
+<p class="success">Well done! You are now ready to try our other tutorials.</p>
 
 				</span>
 				<div class="journal-date">Published 04 May 2014</div>
