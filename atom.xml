@@ -4,7 +4,7 @@
  <title>Learn MicroView</title>
  <link href="http://learn.microview.io/" rel="self"/>
  <link href="http://learn.microview.io"/>
- <updated>2014-06-14T08:33:12+10:00</updated>
+ <updated>2014-06-14T08:41:37+10:00</updated>
  <id>http://learn.microview.io</id>
  <author>
    <name>Geek Ammo</name>
@@ -369,7 +369,7 @@ uView.pixel(10,6);
 &lt;pre&gt;&lt;code&gt;uView.line(10,2,10,6);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In order for the library to perform draws extremely fast (more than 100 frames per second), calls to the drawing functions within the MicroView library does not immediately transfer the contents of screen buffer to the SSD1306 controller. A &lt;code&gt;display()&lt;/code&gt; command is required to instruct the library to perform the bulk transfer from the screen buffer to the SSD1306 controller:&lt;/p&gt;
+&lt;p&gt;In order for the library to perform extremely fast mathematical operations on the screen buffer (more than 100 frames per second), calls to the drawing functions within the MicroView library does not immediately transfer the contents of screen buffer to the SSD1306 controller. A &lt;code&gt;display()&lt;/code&gt; command is required to instruct the library to perform the bulk transfer from the screen buffer to the SSD1306 controller:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;uView.display();
 &lt;/code&gt;&lt;/pre&gt;

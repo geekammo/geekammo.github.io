@@ -257,7 +257,7 @@ uView.pixel(10,6);
 <pre><code>uView.line(10,2,10,6);
 </code></pre>
 
-<p>In order for the library to perform draws extremely fast (more than 100 frames per second), calls to the drawing functions within the MicroView library does not immediately transfer the contents of screen buffer to the SSD1306 controller. A <code>display()</code> command is required to instruct the library to perform the bulk transfer from the screen buffer to the SSD1306 controller:</p>
+<p>In order for the library to perform extremely fast mathematical operations on the screen buffer (more than 100 frames per second), calls to the drawing functions within the MicroView library does not immediately transfer the contents of screen buffer to the SSD1306 controller. A <code>display()</code> command is required to instruct the library to perform the bulk transfer from the screen buffer to the SSD1306 controller:</p>
 
 <pre><code>uView.display();
 </code></pre>
